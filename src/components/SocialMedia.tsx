@@ -44,13 +44,13 @@ const socialLinks = [
     followers: 'Direct Contact',
     description: 'Quick inquiries and customer support',
     color: 'bg-green-500',
-    url: 'https://api.whatsapp.com/send?phone=628561254058&text=Hi%20AGB%20Team%2C%20I%27m%20%3Cname%3E%20from%20%3Ccompany%2Fcountry%3E%0A%0AI%20want%20to%20order%20%3Cfrozen%2Ffresh%3E%20products%3A%0A1.%20Octopus%20Grade%20A%3D500kg%0A2.%20Mackerel%20Size%202UP%3D1000kg%0A3.%20...%0A%0ADestination%3A%20%3Ccity%2C%20country%3E'
+    url: 'https://api.whatsapp.com/send?phone=628561254058&text=Hi%20AGB%20Team%2C%20%3CYourName%3E%20here%20from%20%3CYourCompany%2FYourCountry%3E%0A%0AI%20want%20to%20order%20%3CFrozen%2FFresh%3E%20products%3A%0A1.%20Octopus%20Size%20500gr%3D500kg%0A2.%20Spanish%20Mackerel%20Size%202%2Bkg%3D1000kg%0A3.%20...%0A%0ADestination%3A%20%3CCity%2C%20Country%3E',
   }
 ];
 
 export default function SocialMedia() {
   return (
-    <section id="contact" className="py-20 bg-gradient-to-br from-blue-50 to-teal-50">
+    <section id="contact" className="py-20 bg-gradient-to-br from-blue-50 to-teal-50 scroll-m-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -67,6 +67,7 @@ export default function SocialMedia() {
             <a
               key={index}
               href={social.url}
+              target="_blank" rel="noopener noreferrer"
               className="block bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 hover:transform hover:scale-105 p-6 text-center"
             >
               <div className={`${social.color} w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4`}>
