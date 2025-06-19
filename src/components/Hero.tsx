@@ -2,12 +2,13 @@ import { ArrowRight, Star } from 'lucide-react';
 
 export default function Hero() {
   return (
-    <section id="home" className="relative min-h-screen flex items-center">
-      <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-teal-900/90 z-10"></div>
+    <section id="home" className="relative min-h-screen flex items-center scroll-m-20">
+      <div className="absolute inset-0 bg-gradient-to-r from-blue-900/90 to-orange-500/50 z-10"></div>
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat"
         style={{
-          backgroundImage: 'url(https://images.pexels.com/photos/1267320/pexels-photo-1267320.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop)'
+          // backgroundImage: 'url(https://images.pexels.com/photos/8352344/pexels-photo-8352344.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop)'
+          backgroundImage: 'url(https://images.pexels.com/photos/8351649/pexels-photo-8351649.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop)'
         }}
       ></div>
       

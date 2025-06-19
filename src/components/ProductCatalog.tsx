@@ -23,7 +23,7 @@ const products = [
     id: 3,
     name: 'Spanish Mackerel / Tenggiri',
     price: '$14.40/kg',
-    image: `./images/delicious-white-tuna-recipe-still-life-top-view.jpg`,
+    image: `./images/delicious-white-tuna.jpg`,
     description: 'Sashimi-grade yellowfin tuna, sustainably caught',
     rating: 5,
     category: 'Fish'
@@ -32,7 +32,7 @@ const products = [
     id: 4,
     name: 'Fresh Octopus',
     price: '$28.80/kg',
-    image: `./images/Local-Octopus.jpg`,
+    image: `./images/fresh-octopus.jpg`,
     description: 'Premium barramundi with delicate flavor and firm texture',
     rating: 5,
     category: 'Octopus'
@@ -41,7 +41,7 @@ const products = [
 
 export default function ProductCatalog() {
   return (
-    <section id="products" className="py-20 bg-gray-50">
+    <section id="products" className="py-20 bg-gray-50 scroll-m-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
@@ -81,10 +81,12 @@ export default function ProductCatalog() {
                 
                 <div className="flex items-center justify-between">
                   <span className="text-2xl font-bold text-blue-600">{product.price}</span>
-                  <button className="bg-teal-600 hover:bg-teal-700 text-white px-4 py-2 rounded-lg font-medium transition-colors duration-300 flex items-center space-x-2">
-                    <ShoppingCart className="h-4 w-4" />
-                    <span>Order Now</span>
-                  </button>
+                  <a target="_blank" rel="noopener noreferrer" href='https://api.whatsapp.com/send?phone=628561254058&text=Hi%20AGB%20Team%2C%20%3CYourName%3E%20here%20from%20%3CYourCompany%2FYourCountry%3E%0A%0AI%20want%20to%20order%20%3CFrozen%2FFresh%3E%20products%3A%0A1.%20Octopus%20Size%20500gr%3D500kg%0A2.%20Spanish%20Mackerel%20Size%202%2Bkg%3D1000kg%0A3.%20...%0A%0ADestination%3A%20%3CCity%2C%20Country%3E'>
+                    <button className="bg-teal-600 hover:bg-teal-700 text-white px-4 py-2 rounded-lg font-medium transition-colors duration-300 flex items-center space-x-2">
+                      <ShoppingCart className="h-4 w-4" />
+                      <span>Order Now</span>
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>

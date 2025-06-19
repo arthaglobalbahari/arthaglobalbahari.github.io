@@ -25,7 +25,7 @@ const features = [
 
 export default function About() {
   return (
-    <section id="about" className="py-20 bg-white">
+    <section id="about" className="py-20 bg-white scroll-m-20">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
           <div>
@@ -60,7 +60,7 @@ export default function About() {
           
           <div className="relative">
             <img 
-              src={`./images/pexels-energepic-com-27411-3650159.jpg`}
+              src={`./images/fish-and-ice.jpg`}
               alt="Indonesian fishermen"
               className="rounded-xl shadow-2xl"
             />
